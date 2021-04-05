@@ -1,0 +1,73 @@
+.calculator-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	min-height:300px;
+}
+
+.calculator{
+	display: flex;
+	min-width: 50%;
+	background-color: rgb(0,255,127);
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+form > div{
+	padding: 10px;
+}
+.wg{
+	display: none;
+}
+
+#light-weight-auto{
+	display: inline;
+	width: 160px;
+}
+
+#ent-wg{
+	display: none;
+}
+
+
+
+.btn-smb{
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(65,105,225);
+  transition: 0.2s;
+} 
+.btn-smb:hover { background-color: rgb(0,191,255); }
+.btn-smb:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+
+}
+
+p{
+	font-size: 20px;
+	color:	rgb(65,105,225);
+	font-weight: bold;
+}
+.result{
+	font-size: 22px;
+	color:rgb(65,105,225);
+}
+select{
+	width: 160px;
+}
+
+.text-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.payers{
+	font-family: 'Arial Narrow' ;
+	font-size:20px;
+	width: 90%;
+}
