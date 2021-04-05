@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Калькулятор размера транспортного налога</title>
+</head>
+<body>
+	<header></header>
+	<main>
+		<div class="text-wrapper">
+			<div class="payers">
+				<h3 class="payer-header" >Плательщиками транспортного налога являются:</h3>
+				<ul class="payers-list">
+					<li>Физичиские лица;</li>
+					<li>Организации;</li>
+					<li>лизингополучатель, в случае передачи транспортного средства в финансовую аренду (лизинг);</li>
+				</ul>
+				<h3 class="no-payers-header">Плательщиками не признаются:</h3>
+				<ul class="no-payers-list">
+					<li>республиканские органы государственного управления, иные государственные органы и органы государственного управления, их структурные подразделения с правами юридического лица и территориальные органы;</li>
+					<li>суды;</li>
+					<li>органы прокуратуры;</li>
+					<li>исполкомы (их структурные подразделения с правами юридического лица);</li>
+					<li>организации-перевозчики, включенные в перечни автомобильных перевозчиков, обязанных выполнять автомобильные перевозки транспортом общего пользования;</li>
+					<li>войска и воинские формирования;</li>
+				</ul>
+				<h3 class="not-apply-cars">Налог не уплачивается на транспортные средства:</h3>
+				<ul class="not-apply-list">
+					<li>находящиеся в угоне;</li>
+					<li>используемые для оказания медицинской помощи, в том числе скорой медицинской помощи;</li>
+					<li>выпущенные не позднее 1991 года или сведения о годе выпуска которых отсутствуют;</li>
+					<li>электромобили – по 31 декабря 2025 года;</li>
+					<li>специально оборудованные для использования инвалидами;</li>
+					<li>у плательщиков-организаций – предназначенные для обеспечения социального обслуживания и предоставления социальных услуг нетрудоспособным и другим категориям граждан, находящимся в трудной жизненной ситуации и на которые в соответствии с законодательством нанесена надпись «Социальная служба», а также специально оборудованные для использования инвалидами;</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<div class="calculator-wrapper">
+		
+			<div class="calculator">
+				<form  action="">
+					<div class="owner-wrapper">				
+						<p>КАЛЬКУЛЯТОР РАЗМЕРА ТРАНСПОРТНОГО НАЛОГА</p>
+						<p>Владелец</p>
+						<select id="owner">
+							<option value="">-выбрать-</option>
+							<option value="person">физическое лицо</option>
+							<option value="entity">юридическое лицо</option>
+						</select>		
+					</div>
+					<div class="owner-status-wrapper">
+						<p >Льготы владельца</p>
+						<select id="owner-status">
+							<option value="check">-выбрать-</option>
+							<option value="disabled12">инвалид 1 или 2 группы</option>
+							<option value="veteran">ветеран ВОВ</option>
+							<option value="pensioner">пенсионер</option>
+							<option value="disabled3">инвалид 3 группы</option>
+						</select>
+					</div>
+					<div class="auto-wrapper">
+						<p>Тип авто</p>
+						<select id="type-auto">
+							<option value="check">-выбрать-</option>
+		 					<option name="car" value="car">легковой автомобиль</option>
+		  					<option value="trailer">прицеп</option>
+		  					<option value="truck">грузовой автомобиль</option>
+		  					<option value="bus">автобус</option>
+		  					<option value="moto">мотоцикл</option>
+		  					<option value="truck tractor">седельный тягач</option>
+	  					</select>
+
+
+  					</div>
+  					<div class="weight-wrapper">
+  						<p class="p-weight">Масса авто</p>
+	  					<select class="wg" id="light-weight-auto">
+	  						<option id="" value="0">-выбрать-</option>
+	  						<option id="pers-wg" value="1">менее 1,5 тонны</option>
+	  						<option id="pers-wg" value="2">от 1,5 до 1,75 тонн</option>
+	  						<option id="pers-wg" value="3">от 1,75 до 2 тонн</option>
+	  						<option id="pers-wg" value="4">от 2 до 2,25 тонн</option>
+	  						<option id="pers-wg" value="5">от 2,25 до 2,5 тонн</option>
+	  						<option id="pers-wg" value="6">от 2,5 до 3 тонн</option>
+	  						<option id="pers-wg" value="7">более 3 тонн</option>
+	  						<option id="ent-wg" value="8">менее тонны</option>
+	  						<option id="ent-wg" value="9">от 1 до 2 тонн</option>
+	  						<option id="ent-wg" value="10">от 2 до 3 тонн</option>
+	  						<option id="ent-wg" value="11">более 3 тонн</option>
+	  					</select>
+
+	  					<!-- <select class="wg" id="light-weight-auto-2">
+	  						<option value="1">менее 1,5 тонны</option>
+	  						<option value="2">от 1,5 до 1,75 тонн</option>
+	  						<option value="3">от 1,75 до 2 тонн</option>
+	  						<option value="12">от 2 до 2,25 тонн</option>
+	  						<option value="12">от 2,25 до 2,5 тонн</option>
+	  						<option value="12">от 2,5 до 3 тонн</option>
+	  						<option value="12">более 3 тонн</option>
+	  					</select> -->
+  					
+
+	  					<select class="wg" id="truck-weight">
+						    <option id="" value="0">-выбрать-</option>
+	  						<option value="12">до 2,5 тонн</option>
+	  						<option value="13">от 2,5 до 3,5 тонн</option>
+	  						<option value="14">от 3,5 до 12 тонн</option>
+	  						<option value="15">более 12,5 тонн</option>
+	  					</select>
+
+	  					<select class="wg" id="passengers-seats">
+							<option id="" value="0">-выбрать-</option>
+	  						<option value="16">до 20 включительно</option>
+	  						<option value="17">от 21 до 40 включительно</option>
+	  						<option value="18">свыше 40</option>
+	  					</select>
+
+
+	  					<select class="wg" id="trailer-weight">
+							<option id="" value="0">-выбрать-</option>
+	  						<option value="19">до 0,75 тонны</option>
+	  						<option value="20">более 0,75 тонны</option>
+	  						<option value="21">прицеп-дача(караван)</option>
+	  					</select>
+	  					
+  					</div>	
+  					<div class="btn-wrapper">
+  						<button class="btn-smb" type="button">Рассчитать налог</button>
+  					</div>
+				
+				<div class="result-wrapper">
+					<p class="result">&nbsp</p>
+				</div>
+				</form>
+			</div>
+
+		</div>
+		
+	</main>
+	<script src="main.js"></script>
+</body>
+</html>
